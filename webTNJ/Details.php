@@ -56,11 +56,11 @@
         <div class="slider-wrapper">
             <div class="slider">
 
-                <img id="slide1" src="https://caketheme.com/php/mojuri/media/product/1.jpg" alt="">
+                <img id="slide1" src="https://caketheme.com/html/mojuri/media/product/1.jpg" alt="">
 
-                <img id="slide2" src="https://caketheme.com/php/mojuri/media/product/2.jpg" alt="">
+                <img id="slide2" src="https://caketheme.com/html/mojuri/media/product/2.jpg" alt="">
 
-                <img id="slide3" src="https://caketheme.com/php/mojuri/media/product/3.jpg" alt="">
+                <img id="slide3" src="https://caketheme.com/html/mojuri/media/product/3.jpg" alt="">
 
             </div>
 
