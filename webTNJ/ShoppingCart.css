@@ -1,22 +1,25 @@
 :root {
-    --pink: #e18fcf;
-    --yelow: #d7ab64;
-    --light-yelow: #caa514;
-    --gray: #C7C8CC;
-    --light-gray: #F2EFE5;
-    --while-gray: #e1dce9;
+    --brow_gray: #343434;
+    --be: #8E8B82;
+    --be_milk: #E9DCBE;
+    --gray: #F3F3F3;
+    --white: #ffffff;
+    --textHeading: rgba(126, 100, 12, 0.86);
+    --backgroudHeading: rgba(243, 220, 146, 0.378);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Libre Bodoni", serif;
-    /* font-family: "Libre Bodoni", serif; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -25,7 +28,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
-    background: #000000;
+    background: var(--gray);
 }
 
 section {
@@ -36,14 +39,16 @@ section {
 
     text-align: center;
     font-size: 4rem;
-    color: var(--light-gray);
+    color: rgba(126, 100, 12, 0.86);
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(237, 145, 218, 0.1);
+    background: rgba(243, 220, 146, 0.378);
 }
 
 .heading span {
-    color: var(--pink);
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
+    color: var(--brow_gray);
 }
 
 
@@ -51,16 +56,17 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: .5rem;
-    background: #eeeeee51;
-    color: var(--pink);
+    background: black;
+    color: var(--white);
     padding: .5rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn:hover {
-    background: #de97ceaa;
-    color: var(--light-gray);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background: var(--be_milk);
+    color: var(--brow_gray);
 }
 
 header {
@@ -85,7 +91,7 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--pink);
+    color: var(--gray);
 }
 
 header #toggler {
@@ -93,11 +99,13 @@ header #toggler {
 }
 
 header .text {
-    border-bottom: .1rem solid var(--pink);
+    border-bottom: .1rem solid var(--gray);
 }
 
 header .text h1 {
-    color: var(--light-gray);
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    color: var(--white);
     font-size: 2.5rem;
 }
 
@@ -113,14 +121,13 @@ header .text h1 {
     padding: 5rem 5rem;
     width: 60%;
     height: 100%;
-    background: linear-gradient(180deg, #000000, #460e49, #d971c8, #efe8ed);
+    background: var(--gray);
 }
 
 .shoppingcart-container .shoppingcart .scroll {
     overflow-y: scroll;
     height: 60rem;
-    background: #aeadab8f;
-    border-radius: 1rem;
+    background: #e9dcbe2f;
     margin-bottom: 2rem;
     box-shadow: 0 0 3rem rgba(75, 75, 77, 0.5);
     padding: 2rem 2rem;
@@ -130,11 +137,11 @@ header .text h1 {
 
 ::-webkit-scrollbar {
     width: .4rem;
-    background: linear-gradient(180deg, #efe8ed, #d971c8, #460e49, #000000);
+    background: var(--be_milk);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.789);
+    background-color: var(--be);
     border-radius: 10px;
 }
 
@@ -143,7 +150,7 @@ header .text h1 {
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: var(--light-gray);
+    color: var(--be);
     cursor: pointer;
     padding: 2rem 2rem;
 
@@ -169,7 +176,7 @@ header .text h1 {
 
 .material-checkbox input[type="checkbox"]:checked~.checkmark {
     background-color: #000000;
-    border-color: #c466d0;
+    border-color: var(--be_milk)
 }
 
 .material-checkbox input[type="checkbox"]:checked~.checkmark:after {
@@ -185,11 +192,11 @@ header .text h1 {
 }
 
 .material-checkbox input[type="checkbox"]:focus~.checkmark {
-    box-shadow: 0 0 0 2px #ef8ee765;
+    box-shadow: 0 0 0 2px #b0acb0;
 }
 
 .material-checkbox:hover input[type="checkbox"]~.checkmark {
-    border-color: #be6ac4;
+    border-color: #919091;
 }
 
 .material-checkbox input[type="checkbox"]:disabled~.checkmark {
@@ -214,19 +221,19 @@ header .text h1 {
     align-items: center;
     border-radius: 1rem;
     margin-bottom: 2rem;
-    box-shadow: .4rem 1rem 2rem rgba(110, 10, 107, 0.312);
+    box-shadow: .4rem 1rem 2rem rgba(100, 99, 99, 0.2);
 
 }
 
 .product:hover {
-    box-shadow: 0 0 3rem rgba(178, 142, 175, 0.674);
+    box-shadow: 0 0 3rem rgba(134, 134, 134, 0.674);
 }
 
 .product .img {
     width: 7rem;
     height: 7rem;
     border-radius: 1rem;
-    box-shadow: 0 0 3rem rgba(190, 133, 179, 0.459);
+    box-shadow: 0 0 3rem rgba(158, 156, 158, 0.459);
 }
 
 .product .img img {
@@ -249,7 +256,7 @@ header .text h1 {
 
 .product .price {
     font-size: 1rem;
-    color: rgb(255, 255, 255);
+    color: var(--be);
     font-weight: bold;
 }
 
@@ -261,18 +268,22 @@ header .text h1 {
     width: 5rem;
     height: 2.5rem;
     text-align: center;
-    border-radius: 1rem;
     border: .1rem solid #f4eff323;
     font-size: 1.5rem;
     margin-left: 15rem;
     color: #000000;
     background: #eae4e4;
+    border-radius: 0;
 }
 
 .product .trash a {
     font-size: 2rem;
     margin-left: 2rem;
-    color: #e46cba;
+    color: var(--brow_gray);
+}
+
+.product .trash a:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
 }
 
 /* box product end */
@@ -288,8 +299,7 @@ header .text h1 {
     flex-wrap: wrap;
     padding: 2rem 2rem;
     width: 40%;
-    background: linear-gradient(180deg, #000000, #360a38, #cd6abd, #f6ebf3);
-    justify-content: center;
+    background: url(https://demxanh.com/media/news/2602_vai-lua-122112.jpg) no-repeat center/ cover;
 
 }
 
@@ -317,14 +327,16 @@ header .text h1 {
 }
 
 .main label {
-    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 351;
+    color: var(--be);
     font-size: 2.3em;
     justify-content: center;
     display: flex;
     margin: 50px;
-    font-weight: bold;
     cursor: pointer;
     transition: .5s ease-in-out;
+    text-shadow: 1px 1px 2px #868383bb;
 }
 
 
@@ -335,7 +347,7 @@ header .text h1 {
 input {
     width: 60%;
     height: 3rem;
-    background: #e0dede;
+    background: #edebeb;
     justify-content: center;
     display: flex;
     margin: 20px auto;
@@ -353,8 +365,7 @@ input {
     display: block;
     margin-top: 20px;
     color: var(--pink);
-    background: #000000fa;
-    border-radius: 5px;
+    background: #0000002b;
     font-size: 1.5em;
     font-weight: bold;
     outline: none;
@@ -371,8 +382,7 @@ button {
     display: block;
     margin-top: 20px;
     color: var(--pink);
-    background: #d079d386;
-    border-radius: 5px;
+    background: #0000002b;
     font-size: 1.5em;
     font-weight: bold;
     outline: none;
@@ -382,7 +392,8 @@ button {
 }
 
 button:hover {
-    background: #8f1d8b86;
+    background: var(--be_milk);
+    box-shadow: 2px 2px 10px #868383bb;
     color: var(--light-gray);
 }
 
@@ -417,6 +428,10 @@ h4 {
     font-weight: bold;
     margin-left: 1.5rem;
     font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-weight: bold;
 
 }
 
@@ -448,7 +463,7 @@ label.radio span {
 
     border: 2px solid #ada9a9;
     display: inline-block;
-    color: #8f37aa;
+    color: #8c898d;
     border-radius: 3px;
     text-transform: uppercase;
     font-size: 11px;
@@ -456,8 +471,8 @@ label.radio span {
 }
 
 label.radio input:checked+span {
-    border: .2rem solid #d964f1;
-    box-shadow: .4rem 1rem 2rem rgba(227, 10, 220, 0.312);
+    border: .2rem solid var(--be);
+    box-shadow: 1rem 1rem 2rem rgba(131, 128, 131, 0.467);
 }
 
 .CVCDate {

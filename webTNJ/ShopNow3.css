@@ -1,22 +1,25 @@
 :root {
-    --pink: #e18fcf;
-    --yelow: #d7ab64;
-    --light-yelow: #caa514;
-    --gray: #C7C8CC;
-    --light-gray: #F2EFE5;
-    --while-gray: #e1dce9;
+    --brow_gray: #343434;
+    --be: #8E8B82;
+    --be_milk: #E9DCBE;
+    --gray: #F3F3F3;
+    --white: #ffffff;
+    --textHeading: rgba(126, 100, 12, 0.86);
+    --backgroudHeading: rgba(243, 220, 146, 0.378);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Libre Bodoni", serif;
-    /* font-family: "Libre Bodoni", serif; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -25,7 +28,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
-    background: #000000;
+    background: var(--gray);
 }
 
 section {
@@ -34,16 +37,21 @@ section {
 
 .heading {
 
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
+    font-style: italic;
     text-align: center;
     font-size: 4rem;
-    color: var(--light-gray);
+    color: rgba(126, 100, 12, 0.86);
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(237, 145, 218, 0.1);
+    background: rgba(243, 220, 146, 0.378);
 }
 
 .heading span {
-    color: var(--pink);
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
+    color: var(--brow_gray);
 }
 
 
@@ -51,16 +59,17 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: .5rem;
-    background: #eeeeee51;
-    color: var(--pink);
+    background: black;
+    color: var(--white);
     padding: .5rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn:hover {
-    background: #de97ceaa;
-    color: var(--light-gray);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background: var(--be_milk);
+    color: var(--brow_gray);
 }
 
 /* header section starts */
@@ -86,27 +95,18 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--pink);
+    color: var(--gray);
 }
 
-header .navbar a {
-    font-size: 2rem;
-    padding: 0 1.5em;
-    color: var(--light-gray);
-}
-
-header .navbar a:hover {
-    color: var(--pink);
-}
 
 header .icons a {
     font-size: 2.5rem;
     margin-left: 1.5rem;
-    color: var(--pink);
+    color: var(--be_milk);
 }
 
 header .icons a:hover {
-    color: var(--light-gray);
+    color: var(--be);
 }
 
 header #toggler {
@@ -115,7 +115,7 @@ header #toggler {
 
 header .fa-bars {
     font-size: 3rem;
-    color: var(--pink);
+    color: var(--brow_gray);
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
@@ -130,8 +130,8 @@ header .fa-bars {
     display: flex;
     align-items: center;
     margin-top: 12rem;
-    min-height: 20vh;
-    background: url(https://www.saoraimundo.com/wp-content/uploads/2019/01/diamantes-1024x768.jpg) no-repeat;
+    min-height: 30vh;
+    background: url(https://www.jolieanddeen.com.au/cdn/shop/collections/Pearl_5c156bbd-2bbd-49cb-a78f-92acac30ac74.jpg?crop=center&height=404&v=1615523074&width=1500) no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -143,18 +143,22 @@ header .fa-bars {
 }
 
 .home .content h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
     font-size: 5rem;
-    color: var(--while-gray);
-    text-shadow: 4px 2px 9px #b8b5c454;
+    color: var(--white);
+    text-shadow: 4px 2px 9px #6a5d04a6;
 }
 
 .home .content span {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-size: 3rem;
-    color: var(--pink);
+    color: var(--brow_gray);
     padding: 1rem 0;
     line-height: 1.5;
-    text-shadow: 4px 2px 6px #e3b2f392;
-    background: #1810265a;
+    text-shadow: 4px 2px 6px #403e3792;
     width: 100%;
 }
 
@@ -168,7 +172,7 @@ header .fa-bars {
 
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
+
 
 }
 
@@ -179,13 +183,13 @@ header .fa-bars {
     padding: 2rem 2rem;
     width: 20%;
     height: 100%;
-    background-image: linear-gradient(180deg, #050505d6, #f49ff124, #050505d6);
+
 
 }
 
 .shop .input .search {
-    background: #f49ff124;
-    border: .1rem solid #bf3ba2eb;
+    background: var(--be_milk);
+    border: .1rem solid var(--be);
     border-radius: .5rem;
     display: flex;
     align-items: center;
@@ -199,14 +203,14 @@ header .fa-bars {
     font-size: 1.5rem;
     color: var(--pink);
     border-radius: .5rem;
-    background: #000000e3;
+    background: var(--gray);
 
 }
 
 .shop .input .search i {
 
     font-size: 2.5rem;
-    color: var(--pink);
+    color: var(--brow_gray);
     padding: 1rem 1.5rem;
     border-radius: .5rem;
 
@@ -214,7 +218,7 @@ header .fa-bars {
 
 .shop .input .search:hover {
     border: .1rem solid #d4dbd6d6;
-    box-shadow: 0 .5rem 1rem rgba(122, 36, 146, 0.614);
+    box-shadow: 0 .5rem 1rem rgba(153, 152, 154, 0.614);
 }
 
 
@@ -223,14 +227,17 @@ header .fa-bars {
     padding: 1rem 1.5rem;
     color: var(--light-gray);
     font-size: 2rem;
-    background: #f49ff119;
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
+    background: rgba(243, 220, 146, 0.378);
     margin-top: 5rem;
     text-align: center;
+    font-style: italic;
 }
 
 
 .shop .input h2 span {
-    color: var(--pink);
+    color: var(--textHeading);
 }
 
 
@@ -246,24 +253,27 @@ header .fa-bars {
 .shop .input .navbar a {
 
     padding: 1rem 1.5rem;
-    color: #959797;
+    color: var(--be);
     border-radius: .5rem;
     font-size: 2rem;
-    border: .1rem solid #f49ff123;
+    border: .2rem solid var(--be_milk);
     text-align: center;
     margin-top: 5rem;
-    width: 55%;
+    width: 65%;
     max-height: 4.5rem;
 }
 
+
 .shop .input .navbar .hightlight {
-    color: #ffffff;
+    color: var(--white);
+    background: var(--be_milk);
 }
 
 .shop .input .navbar a:hover {
-    color: var(--pink);
-    border: solid .2rem var(--pink);
-    box-shadow: 0 .5rem 1rem rgba(122, 36, 146, 0.614);
+    color: var(--white);
+    background: var(--be_milk);
+    box-shadow: 0 .5rem 1rem rgba(185, 184, 185, 0.614);
+    border: none;
 }
 
 /* shop input end */
@@ -275,7 +285,7 @@ header .fa-bars {
     flex-wrap: wrap;
     padding: 2rem 2rem;
     width: 80%;
-    background: rgb(0, 0, 0);
+    background: var(--gray);
     justify-content: center;
 }
 
@@ -287,8 +297,20 @@ header .fa-bars {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: center;
+    height: 77.5rem;
+    overflow-y: scroll;
+}
 
+/* Chỉnh thanh scroll */
+
+::-webkit-scrollbar {
+    width: .5rem;
+    background: var(--be_milk);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--be);
+    border-radius: 10px;
 }
 
 .products .box-container .box {
@@ -297,10 +319,8 @@ header .fa-bars {
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
     position: relative;
-    background: #f49ff124;
-    max-width: min-content;
+    background: var(--white);
 }
-
 
 .products .box-container .box .discount {
     position: absolute;
@@ -308,8 +328,8 @@ header .fa-bars {
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: #f58bde;
-    background: rgba(231, 193, 221, 0.216);
+    color: var(--be);
+    background: rgba(141, 123, 22, 0.1);
     z-index: 1;
     border-radius: .5rem;
 }
@@ -322,7 +342,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .image img {
-    height: 20rem;
+    height: 25rem;
 
 }
 
@@ -347,7 +367,7 @@ header .fa-bars {
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--pink);
+    background: var(--be_milk);
     color: #fff;
 }
 
@@ -395,12 +415,12 @@ header .fa-bars {
 
 .shop .products .pages a {
     font-size: 2rem;
-    color: #fff;
+    color: var(--be);
 
 }
 
 .shop .products .pages a:hover {
-    color: var(--pink);
+    color: black;
 }
 
 /* shop products end */
@@ -412,8 +432,12 @@ header .fa-bars {
 
 
 
-
 /* footer section starts */
+
+
+.footer {
+    background: black;
+}
 
 .footer .box-container {
     display: flex;
@@ -427,20 +451,20 @@ header .fa-bars {
 }
 
 .footer .box-container .box h3 {
-    color: #333;
+    color: #aaa6a6;
     font-size: 2.5rem;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a {
     display: flex;
-    color: #666;
+    color: var(--white);
     font-size: 1.5rem;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a:hover {
-    color: var(--pink);
+    color: var(--be_milk);
     text-decoration: underline;
 }
 
@@ -455,12 +479,12 @@ header .fa-bars {
     margin-top: 1.5rem;
     padding-top: 2.5rem;
     font-size: 2rem;
-    color: #333;
+    color: var(--white);
     border-top: .1rem solid rgba(0, 0, 0, .1);
 }
 
 .footer .credit span {
-    color: var(--pink);
+    color: var(--be_milk);
 }
 
 /* footer section ends */

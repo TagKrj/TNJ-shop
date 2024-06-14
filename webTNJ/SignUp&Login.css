@@ -1,11 +1,15 @@
 :root {
-    --pink: #e18fcf;
-    --yelow: #d7ab64;
-    --light-yelow: #caa514;
-    --gray: #C7C8CC;
-    --light-gray: #F2EFE5;
-    --while-gray: #e1dce9;
+    --brow_gray: #343434;
+    --be: #8E8B82;
+    --be_milk: #E9DCBE;
+    --gray: #F3F3F3;
+    --white: #ffffff;
+    --textHeading: rgba(126, 100, 12, 0.86);
+    --backgroudHeading: rgba(243, 220, 146, 0.378);
 }
+
+
+/* header section end */
 
 body {
     margin: 0;
@@ -14,8 +18,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Libre Bodoni", serif;
-    background: linear-gradient(to bottom, #d4aee5, #774395, #33243e);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background: url("https://i0.wp.com/images.squarespace-cdn.com/content/v1/5bfedd592971142d7716e20c/1567611487252-D6U99SLGJ9U1PDVZIG33/ke17ZwdGBToddI8pDm48kLiVFfDWynpBB4zzMsgfxsYUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnLFxeYH93GKsyWVFhY9L3qtU3Zpzg6DctNapzLYyj3mJ5Zj0lU2EgugUr-jaAYBmOA/holts-gems-fine-jewellery-hatton-garden-banner+%281+of+1%29.jpg?format=2500w") no-repeat center/ cover;
+
 }
 
 .main {
@@ -26,6 +33,7 @@ body {
     background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
+
 }
 
 #chk {
@@ -39,6 +47,9 @@ body {
 }
 
 label {
+    font-family: "Playfair Display", serif;
+    font-weight: 591;
+    font-style: italic;
     color: #fff;
     font-size: 2.3em;
     justify-content: center;
@@ -47,12 +58,13 @@ label {
     font-weight: bold;
     cursor: pointer;
     transition: .5s ease-in-out;
+    text-shadow: #343434c8 2px 0px 3px;
 }
 
 input {
     width: 60%;
     height: 10px;
-    background: #e0dede;
+    background: var(--be_milk);
     justify-content: center;
     display: flex;
     margin: 20px auto;
@@ -60,6 +72,9 @@ input {
     border: none;
     outline: none;
     border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
 button {
@@ -70,19 +85,22 @@ button {
     display: block;
     margin-top: 30px;
     color: var(--pink);
-    background: #d197f386;
-    border-radius: 5px;
+    background: var(--white);
     font-size: 1em;
     font-weight: bold;
     outline: none;
     border: none;
     transition: .2s ease-in;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
 button:hover {
-    background: #de97ceaa;
-    color: var(--light-gray);
+    background: var(--be_milk);
+    box-shadow: #34343427 4px 4px 3px;
+    color: var(--brow_gray);
 }
 
 .login {
@@ -94,8 +112,9 @@ button:hover {
 }
 
 .login label {
-    color: var(--pink);
+    color: var(--brow_gray);
     transform: scale(.6);
+    text-shadow: #3434344e 2px 4px 3px;
 }
 
 #chk:checked~.login {

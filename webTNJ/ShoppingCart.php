@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Giỏ hàng</title>
     zz
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link css -->
@@ -11,7 +11,11 @@
     <!-- font chữ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
     <!-- liên kết các file -->
     <link rel="stylesheet" href="TNJ2home.php">
@@ -26,7 +30,7 @@
         <a href="TNJ2home.php" class="logo"><img style="height: 8rem;" src="lg1jpg.jpg" alt=""></a>
 
         <div class="text">
-            <h1>Shopping Cart</h1>
+            <h1>Giỏ Hàng</h1>
         </div>
 
     </header>
@@ -43,7 +47,7 @@
                 <label class="material-checkbox">
                     <input type="checkbox">
                     <span class="checkmark"></span>
-                    Select all
+                    Chọn tất cả
                 </label>
 
                 <div class="product">
@@ -55,9 +59,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -81,9 +85,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -107,9 +111,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -133,9 +137,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -159,9 +163,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -185,9 +189,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -211,9 +215,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -237,9 +241,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -263,9 +267,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương </h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -289,9 +293,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -315,9 +319,9 @@
 
                     <div class="content">
                         <div class="text">
-                            <h2>Diamond Necklace</h2>
+                            <h2>Vòng cổ kim cương</h2>
                         </div>
-                        <div class="price">$300.999</div>
+                        <div class="price">300.999đ</div>
                     </div>
 
 
@@ -347,11 +351,11 @@
 
                 <div class="signup">
                     <form>
-                        <label for="chk" aria-hidden="true">Online paymen</label>
+                        <label for="chk" aria-hidden="true">Thanh toán trực tuyến</label>
 
                         <div class="card">
 
-                            <h4>Card type</h4>
+                            <h4>Loại thẻ</h4>
 
                             <div class="cards">
 
@@ -373,12 +377,12 @@
                         <div class="info">
 
                             <div class="NameOnCard">
-                                <h4>Name on card</h4>
-                                <input type="text" placeholder=" name" required="">
+                                <h4>Tên thẻ</h4>
+                                <input type="text" placeholder=" Tên" required="">
                             </div>
 
                             <div class="CardNumber">
-                                <h4>Card number</h4>
+                                <h4>Số thẻ</h4>
                                 <input type="" placeholder="0000 0000 0000 0000" required="">
                             </div>
 
@@ -400,18 +404,18 @@
                         <div class="total">
 
                             <div class="total-item">
-                                <h2>Product Total</h2>
-                                <h2>$300.999</h2>
+                                <h2>Sản phẩm</h2>
+                                <h2>300.999đ</h2>
                             </div>
 
                             <div class="total-item">
-                                <h2>Shipping</h2>
-                                <h2>$20.000</h2>
+                                <h2>Phí giao hàng</h2>
+                                <h2>20.000đ</h2>
                             </div>
 
                             <div class="total-item">
-                                <h2>Total</h2>
-                                <h2>$320.999</h2>
+                                <h2>Tổng</h2>
+                                <h2>320.999đ</h2>
                             </div>
                         </div>
 
@@ -419,18 +423,18 @@
 
 
 
-                        <button>Pay</button>
+                        <button>Thanh toán</button>
                     </form>
                 </div>
 
                 <div class="login">
                     <form>
-                        <label for="chk" aria-hidden="true">Direct payment</label>
+                        <label for="chk" aria-hidden="true">Thanh toán khi nhận hàng</label>
                         <input type="email" placeholder="Email" required="">
-                        <input type="text" placeholder="Name" required="">
-                        <input type="number" placeholder="number phone" required="">
-                        <input type="text" placeholder="address" required="">
-                        <button>pay</button>
+                        <input type="text" placeholder="Tên" required="">
+                        <input type="number" placeholder="Số điện thoại" required="">
+                        <input type="text" placeholder="Địa chỉ" required="">
+                        <button>Thanh toán</button>
                     </form>
                 </div>
             </div>
